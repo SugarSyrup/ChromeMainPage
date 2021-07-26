@@ -8,34 +8,55 @@
     <title>Document</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input required type="text" placeholder="What is your name?" />
-      <button>Log in</button>
-    </form>
+    <section class="section left_section">
+      <div class="DayNWeatherBox box">
+        <p id="clock"></p>
+        <p id="dates"></p>
 
-    <h1 id="greeting" class="hidden"></h1>
-
-    <h2 id="clock"></h2>
-
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-
-    <div id="quote">
-        <span></span>
-        <span></span>
+        <div id="weather">
+          <span> </span>
+          <span></span>
+        </div>
       </div>
 
-    <div id="weather">
-      <span> </span>
+      <div class="AppLinksBox box">
+        
+      </div>
+    </section>
+    <section class="section center_section">
+      <div class="ToDoListBox box">
+        <form id="login-form" class="hidden">
+          <input required type="text" placeholder="What is your name?" />
+          <button>Log in</button>
+        </form>
+
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+          <ul id="todo-list"></ul>
+      </div>
+    </section>
+    <section class="section right_section">
+      <div class="YoutubeMusicBox box"></div>
+
+      <div class="MyGoalBox box">
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+    </section>
+    <!--
+    <div id="quote">
+      <span></span>
       <span></span>
     </div>
-
+    -->
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
+    <!--<script src="js/background.js"></script>-->
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
   </body>
