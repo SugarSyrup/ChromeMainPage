@@ -1,0 +1,36 @@
+.left_section{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;    
+    align-items: center;
+    
+    /*section 구분을 위한 임시 border*/
+}
+
+.left_section--topbox{
+    height:30%;
+    width:90%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+
+    
+    /*section 구분을 위한 임시 border*/
+    border:1px solid white;
+
+    font-size:3vw;
+}
+
+.left_section--topbox p{
+    margin:inherit;
+}
+
+.left-section--bottombox{
+    height:60%;
+    width:90%;
+
+    /*section 구분을 위한 임시 border*/
+    border:1px solid black;
+}

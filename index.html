@@ -8,22 +8,24 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="section left_section">
-      <div class="DayNWeatherBox box">
-        <p id="clock"></p>
-        <p id="dates"></p>
-
-        <div id="weather">
+    <!--left section-->
+    <section class="left_section">
+      <!--left_section topbox  (clock, dates, weather ...)-->
+      <div class="left_section--topbox">
+        <p id="clock" class="left_section--topbox__clock"></p>
+        <p id="dates" class="left_section--topbox__dates"></p>
+        <div id="weather" class="left_section--topbox__weather">
           <span> </span>
           <span></span>
         </div>
       </div>
 
-      <div class="AppLinksBox box">
-        
+      <div class="left-section--bottombox">
+        <div id="iconbox" class="left-section--bottombox__iconbox"></div>
       </div>
     </section>
-    <section class="section center_section">
+
+    <section class="center_section">
       <div class="ToDoListBox box">
         <form id="login-form" class="hidden">
           <input required type="text" placeholder="What is your name?" />
@@ -37,7 +39,7 @@
             required
           />
         </form>
-          <ul id="todo-list"></ul>
+        <ul id="todo-list"></ul>
       </div>
     </section>
     <section class="section right_section">

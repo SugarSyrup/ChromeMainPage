@@ -1,0 +1,56 @@
+.shortcut--icons--list {
+  background-color: beige;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+a:link,
+a:visited,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.shortcut--icon {
+  width: 112px;
+  height: 112px;
+}
+
+.shortcut--icon--add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration-color: black;
+  text-decoration-line: none !important;
+
+  width: 80px;
+}
+
+.shortcut--icon--add__titleImg {
+  border-radius: 90%;
+
+  background-color: white;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-plus {
+}
+
+.shortcut--icon--add__titleLtr {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+
+  width: 100%;
+}
