@@ -12,11 +12,6 @@ a:hover {
   text-decoration: none;
 }
 
-.shortcut--icon {
-  width: 112px;
-  height: 112px;
-}
-
 .shortcut--icon--add {
   display: flex;
   flex-direction: column;
@@ -25,8 +20,13 @@ a:hover {
 
   text-decoration-color: black;
   text-decoration-line: none !important;
+  
+  width: 112px;
+  height: 112px;
+}
 
-  width: 80px;
+.shorcut--icon--add:hover {
+  opacity: 1.5;
 }
 
 .shortcut--icon--add__titleImg {
@@ -50,7 +50,7 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: white;
+  color: black;
 
   width: 100%;
 }

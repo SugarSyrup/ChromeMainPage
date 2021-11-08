@@ -16,8 +16,8 @@
   <body>
     <div class="shortcut--icons--list" id="icons--list">
       <!--Create Shortcut icon by Button-->
-      <button class="shorcut--icon" id="shorcut--icon--add">
-        <a class="shortcut--icon--add">
+      <!--<button class="shortcut--icon" >-->
+        <a class="shortcut--icon--add" id="shortcut--icon--add">
           <div class="shortcut--icon--add__titleImg">
             <i class="fas fa-plus"></i>
           </div>
@@ -25,16 +25,16 @@
             <span>바로가기 추가</span>
           </div>
         </a>
-      </button>
+      <!--</button>-->
 
       <!--Create Shortcut Icon Dialog-->
-      <dialog id="shorcut__dialog">
+      <dialog id="shortcut__dialog">
         <p class="shortcut--dialog__title">바로가기 추가</p>
-        <p class="shorcut--dialog__name">이름</p>
-        <input class="shorcut--dialog__name_value" required/>
-        <p class="shorcut--dialog__url">URL</p>
-        <input class="shorcut--dialog__url_value" required/>
-        <button id="dialog__button" class="shorcut--dialog__button" type="submit">생성</button>
+        <p class="shortcut--dialog__name">이름</p>
+        <input class="shortcut--dialog__name_value" id="dialog_name" required/>
+        <p class="shortcut--dialog__url" >URL</p>
+        <input class="shortcut--dialog__url_value" id="dialog_url" required/>
+        <button id="dialog__button" class="shortcut--dialog__button" type="submit" value="button">생성</button>
 
         <script src="js/dialog.js"></script>
       </dialog>

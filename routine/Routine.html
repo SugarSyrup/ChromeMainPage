@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/routine.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>Routine</title>
+</head>
+<body>
+    <div class="routine">
+        <h1 class="text routine__title">My Routine</h1>
+        <a class="routine__add" id="routine_add">
+            <i class="fas fa-plus"></i>
+            <span> 루틴 추가 </span>
+        </a>
+
+        <div id="routine__list"></div>
+
+        <dialog id="routine--dialog" class="routine--dialog">
+            <p class="routine--dialog__title">루틴 추가</p>
+            <div class="routine--dialog__name_div  dialog__line">
+                <p class="routine--dialog__text">이름</p>
+                <input class="" id="routine--dialog__name" required/>
+            </div>
+            <div class="routine--dialog__time_div  dialog__line">
+                <p class="routine--dialog__time">Start Time</p>
+                <input class="" id="routine--dialog__start_time" type="time" value="00:00"required/>
+                <p class="routine--dialog__time">Finish Time</p>
+                <input class="" id="routine--dialog__end_time" type="time" value="23:59" required/>
+            </div>
+            <div class="routine--dialog__url_div  dialog__line">
+                <p class="routine--dialog__text">Link</p>
+                <input class="" id="routine--dialog__url" />
+            </div>
+            <button id="routine--dialog__button" class="routine--dialog__button" type="submit" value="button">생성</button>
+    
+            <script src="js/dialog.js"></script>
+        </dialog>
+
+        
+    </div>
+    <script src="js/routine.js"></script>
+</body>
+</html>
