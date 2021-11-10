@@ -33,6 +33,7 @@ dialog__button.addEventListener('click', function createIcon() {
 
         const Icon_div = document.createElement("div");
         Icon_div.classList.add('routine-icon');
+        Icon_div.classList.add('routine__block');
 
         const img = document.createElement("img");
         img.src = "https://www.google.com/s2/favicons?domain_url=" + dialog__url.value;
