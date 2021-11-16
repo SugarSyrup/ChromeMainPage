@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/routine.css" />
     <link
       rel="stylesheet"
@@ -14,21 +15,28 @@
     <title>Routine</title>
 </head>
 <body>
-    <div class="routine">
+    <div class="title_div">
+        <p id="clock"></p>
+        <script src="js/time.js"></script>
         <h1 class="text routine__title">My Routine</h1>
+    </div>
+    <div class="routine">
+
+        <div id="routine__list" class="routine__list">
+            <div class="routine-icon">
+                <div class="routin-icon_top">
+                    <span class="routine__name">테스트</span>
+                    <i class="fas fa-ellipsis-h dot"></i>
+                </div>
+                <img src="https://www.google.com/s2/favicons?domain_url=www.naver.com">
+                <span class="routine__time">00:00 ~ 23:59</span>
+            </div>
+        </div>
+
         <a class="routine__add" id="routine_add">
             <i class="fas fa-plus"></i>
             <span> 루틴 추가 </span>
         </a>
-
-        <div id="routine__list" class="routine__list">
-            <div class="routine-icon">
-                <span class="routine__name">테스트</span>
-                <img src="https://www.google.com/s2/favicons?domain_url=www.naver.com">
-                <span class="routie__time">00:00 ~ 23:59</span>
-            </div>
-
-        </div>
 
         <dialog id="routine--dialog" class="routine--dialog">
             <p class="routine--dialog__title">루틴 추가</p>

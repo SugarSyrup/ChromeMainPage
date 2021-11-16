@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 html, body {
     margin: 0;
     height: 100%;
     overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 h1{
@@ -9,58 +12,100 @@ h1{
     overflow:hidden;
 }
 
+.title_div {
+    position:relative;
+    left:20px;
+    top:40px;
+    display:block;
+}
+
+.title_div #clock {
+    font-size:larger;
+    font-weight:bolder;
+
+    color:gray;
+    opacity: 0.7;
+}
+
+.title_div .routine__title{
+    left:30px;
+}
+
 .routine{
+    display:block;
     width:50vw;
     height:100%;
+    
+    top:100px;
+    left:30px;
 
     background-color: white;
 
     position:relative;
 }
-
-.routine .routine__add{
-
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-start;
-    align-items: center;
-
-    border-radius:20%;
-    border-style:dotted;
-
-    left:3%;
-    top:100px;
-    position: relative;
-    
-    width : 50%;
-    height:10%;
-    padding:10px;
-
-    display:flex;
-    
-    background-color:plum;
-}
-
 .routine .routine__list {
     position:relative;
-    display:block;
-    left: 3%;
-    top:100px;
 }
 
 .routine .routine__list .routine-icon {
     width : 50%;
     height:70px;
     border-radius:20%;
-    border-style:dotted;
     margin:5px;
     background-color:plum;
 
     padding:10px;
+    
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    gap:1px 1px;
+}
+.routine .routine__list .routine-icon .routin-icon_top {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.routine .routine__list .routine-icon .routin-icon_top .routine__name {
+    font-size:30px;
+}
+.routine .routine__list .routine-icon .routin-icon_top .dot{
+    margin-right:10px;
 }
 .routine .routine__list .routine-icon img {
     left: 10px;
+
+    display:none;
 }
+.routine .routine__list .routine-icon .routine__time {
+    font-size:15px;
+    color:gray;
+    opacity: 0.7;
+}
+
+.routine .routine__add{
+
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    
+    width : 50%;
+    height:10%;
+    padding:10px;
+
+    border-radius:20%;
+
+    display:flex;
+    
+    background-color:plum;
+
+    opacity:0.7;
+}
+
+
 
 
 .routine--dialog .routine--time {
