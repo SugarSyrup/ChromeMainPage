@@ -51,10 +51,11 @@ h1{
     width : 50%;
     height:70px;
     border-radius:20%;
-    margin:5px;
+    margin:inherit;
     background-color:plum;
 
     padding:10px;
+    position:relative;
     
     display:flex;
     flex-direction:column;
@@ -116,4 +117,10 @@ h1{
     display:flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+
+#test{
+    cursor : move;
+    position:relative;
 }
